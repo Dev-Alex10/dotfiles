@@ -9,7 +9,6 @@ window#waybar {
 
 #custom-app-menu,
 #window,
-#tray,
 #clock {
   /*color: #f2f3f4;*/
   padding: 2px 0px 2px 0px;
@@ -37,6 +36,7 @@ window#waybar {
   /*color: #ba09a0; lighter purple*/
   padding: 2px 0px 2px 0px;
   font-weight: bold;
+  margin-right: 15px;
 }
 
 #custom-app-menu {
@@ -45,9 +45,10 @@ window#waybar {
 }
 
 #pulseaudio {
-  margin-left: 15px;
+  margin-right: 15px;
 }
 
+#tray,
 #memory,
 #disk,
 #cpu {
@@ -57,7 +58,6 @@ window#waybar {
 
 
 #group-power {
-  margin-left: 15px;
   margin-right: 36px;
 }
 

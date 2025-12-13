@@ -19,7 +19,6 @@
       "disk",
       "custom/media",
       "pulseaudio",
-      "tray",
       "group/group-power"
     ],
     
@@ -60,13 +59,6 @@
 			"on-click": "playerctl play-pause",
 			"max-length": 50
     },
-
-    "tray": {
-      "icon-size": 23,
-      "spacing": 9,
-      "tooltip": false
-    },
-
     "clock": {
       "interval": 60,
       "format": "{:%a %d, %b  %I:%M %p}",
@@ -74,7 +66,7 @@
     },
 
     "pulseaudio": {
-			"format": "<span foreground='#0072c9'>{icon}</span>     {volume}%",
+			"format": "<span foreground='#0072c9'>{icon}</span>  {volume}%",
 			"format-muted": "",
 			"format-icons": {
 			"default": ["", "", " "]
@@ -84,7 +76,7 @@
 
 	"cpu": {
 			"interval": 1,
-			"format": "CPU: {usage:>2}%",
+			"format": "CPU: {usage:>2}%"
 		},
 
 		"memory": {
@@ -140,6 +132,7 @@
       "hyprland/window"
     ],
     "modules-center": ["clock"],
+    "modules-right": ["tray"],
     "clock": {
       "interval": 60,
       "format": "{:%a %d, %b  %I:%M %p}",
@@ -163,6 +156,12 @@
         "QEMU(.*)": "MacOs",
         "(.*)coolercontrol(.*)":"Fan Control"
       },
+      "tooltip": false
+    },
+    "tray": {
+      "show-passive-items":true,
+      "icon-size": 23,
+      "spacing": 9,
       "tooltip": false
     }
 }]
