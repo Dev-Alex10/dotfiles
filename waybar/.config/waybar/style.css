@@ -1,0 +1,74 @@
+* {
+    font-family: SF Pro Display;
+    font-size: 15;
+}
+
+window#waybar {
+  /*background-color: rgba(27, 27, 27, 0.4);*/
+}
+
+#custom-app-menu,
+#window,
+#tray,
+#clock {
+  /*color: #f2f3f4;*/
+  padding: 2px 0px 2px 0px;
+  font-weight: 500;
+  margin-left: 12px;
+}
+
+#custom-app-menu {
+  font-size: 18;
+  margin-left: 14px;
+  padding: 1px 0px 3px 0px;
+}
+
+#window {
+  font-weight: bold;
+  margin-left: 15px;
+}
+
+#custom-browser {
+  margin-left: 18px;
+}
+
+#custom-media {
+  opacity: 0.7;
+  /*color: #ba09a0; lighter purple*/
+  padding: 2px 0px 2px 0px;
+  font-weight: bold;
+}
+
+#custom-app-menu {
+  margin-left: 14px;
+  padding: 1px 0px 3px 0px;
+}
+
+#pulseaudio {
+  margin-left: 15px;
+}
+
+#memory,
+#disk,
+#cpu {
+  font-weight: bold;
+  margin-right: 16px;
+}
+
+
+#group-power {
+  margin-left: 15px;
+  margin-right: 36px;
+}
+
+#custom-power {
+  color: #fc0303;
+  font-size: 20;
+  margin-left: 15px;
+}
+
+#custom-reboot,
+#custom-quit {
+  margin-left: 15px;
+}
+

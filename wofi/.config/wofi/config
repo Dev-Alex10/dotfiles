@@ -1,0 +1,19 @@
+# mode & placement
+show=drun
+width=1000
+lines=8
+
+# icons
+allow_images=true
+image_size=40
+
+# search & UX
+insensitive=true
+hide_scroll=false
+no_actions=true
+
+# terminal
+term=kitty
+
+# stylesheet
+style=/home/Alex/.config/wofi/style.css

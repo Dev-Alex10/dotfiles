@@ -1,0 +1,109 @@
+* {
+  font-family: "MesloLGS Nerd Font Mono Bold";
+  font-size: 14px;
+  min-height: 0;
+  padding-right: 2px;
+  padding-left: 2px;
+  padding-bottom: 0px;
+}
+
+#waybar {
+  background: transparent;
+  color: #c6d0f5;
+  margin: 2px 2px;
+}
+
+#workspaces {
+  border-radius: 5px;
+}
+
+#workspaces button {
+  color: #babbf1;
+  padding: 0.4rem;
+}
+
+#workspaces button.active {
+  color: #b16cff;
+}
+
+button {
+  background: transparent;
+}
+
+#workspaces button:hover {
+  background: #1e1e1e;
+  border: 0px solid transparent;
+}
+
+#custom-music,
+#pulseaudio,
+#network,
+#cpu,
+#group-power{
+  padding: 0.5rem 1rem;
+  margin: 5px 0;
+}
+
+#memory{
+  font-family: 'MesloLGS Nerd Font Mono';
+}
+
+
+#clock,
+#custom-weather {
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+#clock:hover,
+#custom-music:hover,
+#clock:hover,
+#pulseaudio:hover,
+#network:hover,
+#cpu:hover,
+#memory:hover,
+#group-power:hover,
+#custom-weather:hover{
+  background: #1e1e1e;
+  border: 0px solid transparent;
+}
+#custom-power {
+  color: #f38ba8;
+  margin-right: 5px;
+}
+#custom-weather {
+  color: #8caaee;
+  margin-left: 0.5rem;
+  border-radius: 5px;
+}
+
+#custom-music {
+  color: #9542fa;
+}
+
+#custom-weather.clear {
+  color: #e5c890; /* Sunny yellow */
+}
+
+#custom-weather.cloud {
+  color: #99d1db; /* Light blue */
+}
+
+#custom-weather.rain {
+  color: #8caaee; /* Blue */
+}
+
+#custom-weather.snow {
+  color: #c6d0f5; /* White-ish */
+}
+
+#custom-weather.thunder {
+  color: #ca9ee6; /* Purple */
+}
+
+#custom-weather.fog {
+  color: #b0b4bc; /* Gray */
+}
+
+#custom-weather.error {
+  color: #e78284; /* Red */
+}

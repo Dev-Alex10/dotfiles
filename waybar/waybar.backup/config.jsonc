@@ -1,0 +1,124 @@
+[
+	{
+		"output" : "HDMI-A-1",
+		"layer": "top",
+		"position": "top",
+		"modules-left": ["hyprland/workspaces"],
+
+		"modules-center": ["clock", "custom/weather"],
+
+		"modules-right": [
+			"pulseaudio",
+			"custom/music",
+			"network",
+			"cpu",
+			"memory",
+			"group/group-power"
+		],
+
+		"custom/music": {
+			"format": "   {}",
+			"escape": true,
+			"interval": 5,
+			"tooltip": false,
+			"exec": "playerctl metadata --format='{{ artist }} - {{ title }}'",
+			"on-click": "playerctl play-pause",
+			"max-length": 50
+		},
+
+		"pulseaudio": {
+			"format": "<span foreground='#006ead'>{icon}</span>  {volume}%",
+			"format-muted": "",
+			"format-icons": {
+			"default": ["", "", " "]
+			},
+			"on-click": "pwvucontrol"
+		},
+
+		"clock": {
+			"timezone": "Portugal",
+			"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+			"format": "{:%d/%m - %H:%M:%S}",
+			"interval": 1
+		},
+
+		"custom/weather": {
+			"format": "{}",
+			"tooltip": true,
+			"interval": 1800,
+			"exec": "$(pwd)/Software/scripts/weather-stats/weather-stats",
+			"return-type": "json"
+		},
+		
+		"network": {
+			"format-wifi": "󰤢 {bandwidthDownBits}",
+			"format-ethernet": "󰈀  {bandwidthDownBits}",
+			"format-disconnected": "󰤠 No Network",
+			"interval": 5,
+			"tooltip": false
+		},
+
+		"cpu": {
+			"interval": 1,
+			"format": "  {icon0}{icon1}{icon2}{icon3} {usage:>2}%",
+			"format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"]
+		},
+
+		"memory": {
+			"interval": 30,
+			"format": "\uefc5 {used:0.1f}G/{total:0.1f}G"
+		},
+
+		"group/group-power": {
+			"orientation": "inherit",
+			"drawer": {
+				"transition-duration": 500,
+				"children-class": "not-power",
+				"transition-left-to-right": false
+				},
+				"modules": [
+					"custom/power", // First element is the "group leader" and won't ever be hidden
+					"custom/quit",
+					"custom/reboot"
+				]
+		},
+		"custom/quit": {
+			"format": "<span foreground='#cba6f7'>󰗼</span>  Quit",
+			"tooltip": false,
+			"on-click": "hyprctl dispatch exit"
+		},
+		"custom/reboot": {
+			"format": "<span foreground='#fab387'> 󰜉</span>  Reboot",
+			"tooltip": false,
+			"on-click": "reboot"
+		},
+		"custom/power": {
+			"format": "󰐥",
+			"tooltip": false,
+			"on-click": "shutdown now"
+		}
+	},
+	{
+		"output" : "DVI-D-1",
+		"layer": "top",
+		"position": "top",
+		"modules-left": ["hyprland/workspaces"],
+
+		"modules-center": ["clock", "custom/weather"],
+
+		"clock": {
+			"timezone": "Portugal",
+			"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+			"format": "{:%d/%m - %H:%M:%S}",
+			"interval": 1
+		},
+
+		"custom/weather": {
+			"format": "{}",
+			"tooltip": true,
+			"interval": 1800,
+			"exec": "$(pwd)/Software/scripts/weather-stats/weather-stats",
+			"return-type": "json"
+		}
+	}
+]
