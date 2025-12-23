@@ -87,7 +87,7 @@
 			"format-icons": {
 			"default": ["", "", " "]
 			},
-			"on-click": "pwvucontrol"
+			"on-click": "pavucontrol"
 		},
 
 	  "cpu": {
