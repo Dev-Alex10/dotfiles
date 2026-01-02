@@ -151,7 +151,7 @@
       "hyprland/window"
     ],
     "modules-center": ["clock"],
-    "modules-right": ["tray"],
+    "modules-right": ["pulseaudio","tray"],
     "clock": {
       "interval": 60,
       "format": "{:%a %d, %b  %I:%M %p}",
@@ -182,6 +182,14 @@
       "icon-size": 23,
       "spacing": 9,
       "tooltip": false
-    }
+    },
+  "pulseaudio": {
+      "format": "<span foreground='#0072c9'>{icon}</span>  {volume}%",
+		  "format-muted": "",
+			"format-icons": {
+			"default": ["", "", " "]
+			},
+			"on-click": "pavucontrol"
+		}
 }]
 
