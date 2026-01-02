@@ -38,8 +38,8 @@
         "zen": "Zen",
         "spotify": "Spotify",
         "discord": "Discord",
-        "QEMU(.*)": "MacOs",
-        "(.*)coolercontrol(.*)":"Fan Control"
+        "(.*)coolercontrol(.*)":"Fan Control",
+        "(.*)stremio":"Stremio"
       },
       "tooltip": false
     },
@@ -172,8 +172,8 @@
         "zen": "Zen",
         "spotify": "Spotify",
         "discord": "Discord",
-        "QEMU(.*)": "MacOs",
-        "(.*)coolercontrol(.*)":"Fan Control"
+        "(.*)coolercontrol(.*)":"Fan Control",
+        "(.*)stremio":"Stremio"
       },
       "tooltip": false
     },
