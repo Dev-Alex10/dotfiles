@@ -39,7 +39,8 @@
         "spotify": "Spotify",
         "discord": "Discord",
         "(.*)coolercontrol(.*)":"Fan Control",
-        "(.*)stremio":"Stremio"
+        "(.*)stremio":"Stremio",
+        "(.*)Discord":"Discord"
       },
       "tooltip": false
     },
@@ -173,7 +174,8 @@
         "spotify": "Spotify",
         "discord": "Discord",
         "(.*)coolercontrol(.*)":"Fan Control",
-        "(.*)stremio":"Stremio"
+        "(.*)stremio":"Stremio",
+        "(.*)Discord":"Discord"
       },
       "tooltip": false
     },
