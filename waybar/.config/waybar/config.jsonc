@@ -84,6 +84,7 @@
 
     "pulseaudio": {
       "format": "<span foreground='#0072c9'>{icon}</span>  {volume}%",
+      "max-volume": 200,
 		  "format-muted": "",
 			"format-icons": {
 			"default": ["", "", " "]
