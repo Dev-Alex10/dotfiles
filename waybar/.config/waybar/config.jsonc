@@ -10,7 +10,7 @@
     "modules-left": [ 
       "custom/app-menu",
       "hyprland/window",
-      "custom/browser"
+      "tray"
     ],
     "modules-center": ["clock"],
     "modules-right": [ 
@@ -42,12 +42,6 @@
         "(.*)stremio":"Stremio",
         "(.*)Discord":"Discord"
       },
-      "tooltip": false
-    },
-
-    "custom/browser": {
-      "format": "Browser",
-      "on-click": "firefox",
       "tooltip": false
     },
 
@@ -137,7 +131,13 @@
 			"format": "󰐥 ",
 			"tooltip": false,
 			"on-click": "shutdown now"
-		}  
+		},  
+        "tray": {
+            "show-passive-items":true,
+            "icon-size": 23,
+            "spacing": 14,
+            "tooltip": false
+        }
 },
 {
   "output": "DVI-D-1",

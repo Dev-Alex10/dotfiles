@@ -7,7 +7,6 @@ window#waybar {
   /*background-color: rgba(27, 27, 27, 0.4);*/
 }
 
-#custom-app-menu,
 #window,
 #clock {
   /*color: #f2f3f4;*/
@@ -24,7 +23,8 @@ window#waybar {
 
 #window {
   font-weight: bold;
-  margin-left: 15px;
+  margin-left: 8px;
+  margin-right: 8px;
 }
 
 #custom-browser {
@@ -48,7 +48,6 @@ window#waybar {
   margin-right: 15px;
 }
 
-#tray,
 #memory,
 #disk,
 #cpu {
