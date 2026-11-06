@@ -1,15 +1,13 @@
 local M = {}
 
 function M:peek(job)
-	-- Set a fixed width of 50 characters for the preview
-	local preview_width = 55
 
 	local child = Command("glow")
 		:arg({
 			"--style",
 			"dark",
 			"--width",
-			tostring(preview_width),  -- Use fixed width instead of job.area.w
+			tostring(job.area.w),  -- Use fixed width instead of job.area.w
 			tostring(job.file.url),
 		})
 		:env("CLICOLOR_FORCE", "1")
@@ -39,7 +37,7 @@ function M:peek(job)
 
 	child:start_kill()
 	if job.skip > 0 and i < job.skip + limit then
-		ya.mgr_emit("peek", { 
+		ya.emit("peek", { 
 			tostring(math.max(0, i - limit)), 
 			only_if = job.file.url,
 			upper_bound = true 
@@ -55,8 +53,8 @@ function M:seek(job)
 	if not h or h.url ~= job.file.url then
 		return
 	end
-	ya.mgr_emit('peek', {
-		math.max(0, cx.active.preview.skip + job.units),
+	ya.emit('peek', {
+		math.max(0, cx.active.preview.skip + job.units * 5),
 		only_if = job.file.url,
 	})
 end
